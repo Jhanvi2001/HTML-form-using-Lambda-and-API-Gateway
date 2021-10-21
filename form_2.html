@@ -1,0 +1,189 @@
+<html>
+    <head>
+      <title>Depression consultancy form</title>
+      <link rel = "icon" href = "depreesion_4.jpg" type = "image/x-icon">
+        <script type="text/javascript" src="submit-data.js"></script>
+         <style>
+            body{
+            text-align:center;
+            font-family:sans-serif;
+            background-image:linear-gradient(to bottom right, #33adff , #7300e6);
+            color:white;  
+          }
+            #title{
+            font-size:45px;
+          }
+            #description{
+            font-size:20px;
+          }
+            #body{
+            width:600px;
+            padding:30px;
+            margin:auto;
+            border-radius:10px;
+            text-align:left;
+            background-color:rgba(0,0,0,0.6);
+            font-size:20px;
+            color:white;
+            
+          }
+            #name{
+            width:560px;
+            padding:15px;
+            border-radius:10px;
+          }
+            #email{
+            width:560px;
+            padding:15px;
+            border-radius:10px;
+          }
+            #age{
+            width:560px;
+            padding:15px;
+            border-radius:10px;
+          }
+            #dropdown_1{
+            width:560px;
+            padding:15px;
+            border-radius:10px;
+          }
+            #dropdown_2{
+            width:560px;
+            padding:15px;
+            border-radius:10px;
+          }
+            #dropdown_3{
+            width:560px;
+            padding:15px;
+            border-radius:10px;
+          }
+            #dropdown_4{
+            width:560px;
+            padding:15px;
+            border-radius:10px;
+          }
+
+            #comment{
+            width:590px;
+            padding:10px;
+            border-radius:10px;
+            border:none;
+            
+          }
+            #submit{
+            width:590px;
+            padding:20px;
+            font-size:20px;
+            border-radius:10px;
+            border:none;
+            margin-top:3%;
+            color:white;
+            background-color:green;
+            
+          }
+          #exit{
+            width:590px;
+            padding:20px;
+            font-size:20px;
+            border-radius:10px;
+            border:none;
+            margin-top:3%;
+            color:white;
+            background-color:green;
+            
+          }
+
+</style>
+</head>
+<body>
+<h1 id="title">Depression relief guranteed</h1>
+<h3>We are here to help you 24/7</h3>
+<div id="body">
+
+<form id="survey-form">
+    <label id="name-label" for="name">
+        <p>Name:</p>
+    </label>
+    <input id="name" type="text" placeholder="Enter Your Name" required>
+  
+    <label id="email-label" for="email">
+        <p>Email:</p>
+    </label>
+    <input id="email" type="email" placeholder="Enter Your Email" required>
+  
+    <label id="number-label" for="number">
+        <p>Age:</p>
+    </label>
+    <input id="age" type="number" placeholder="Enter Your Age" min="12" max="50" required>
+  
+    <p>Little interest or pleasure in doing things</p>
+    <select id="dropdown_1">
+    <option value="default">Nothing</option>
+    <option value="Not at all.">Not at all.</option>
+    <option value="Several days.">Several days.</option>
+    <option value="More than half days.">More than half days.</option>
+    <option value="Nearly eveyday.">Nearly eveyday.</option>
+    
+    </select>
+  
+    <p>Feeling down, depressed, or hopeless</p>
+    <select id="dropdown_2">
+    
+    <option value="default">Nothing</option>
+    <option value="Not at all.">Not at all.</option>
+    <option value="Several days.">Several days.</option>
+    <option value="More than half days.">More than half days.</option>
+    <option value="Nearly eveyday.">Nearly eveyday.</option>
+    
+  </select>
+
+  <p>Trouble falling or staying asleep, or sleeping too much</p>
+  <select id="dropdown_3">
+    
+    <option value="default">Nothing</option>
+    <option value="Not at all.">Not at all.</option>
+    <option value="Several days.">Several days.</option>
+    <option value="More than half days.">More than half days.</option>
+    <option value="Nearly eveyday.">Nearly eveyday.</option>
+    
+  </select>
+  
+  <p>Feeling tired or having little energy</p>
+  <select id="dropdown_4">
+    
+    <option value="default">Nothing</option>
+    <option value="Not at all.">Not at all.</option>
+    <option value="Several days.">Several days.</option>
+    <option value="More than half days.">More than half days.</option>
+    <option value="Nearly eveyday.">Nearly eveyday.</option>
+    
+  </select>
+<br>
+<p>Which problems you face most of the time?</p>
+
+<input type="checkbox" name="thoughts" value="Thoughts that you would be better off dead, or of hurting yourself.">
+Thoughts that you would be better off dead, or of hurting yourself.</input>
+<br>
+<br>
+<input type="checkbox" name="thoughts" value="Feeling bad about yourself - or that you are a failure or have let yourself or your family down">
+Feeling bad about yourself - or that you are a failure or have let yourself or your family down</input>
+<br>
+<br>
+<input type="checkbox" name="thoughts" value="Trouble concentrating on things, such as reading the newspaper or watching television">
+Trouble concentrating on things, such as reading the newspaper or watching television</input>
+<br>
+<br>
+<input type="checkbox" name="thoughts" value="Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual.">
+Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual.</input>
+<br>
+<br>
+ 
+<textarea id="comment" rows="10" cols="100">Please convey all the issues you are facing for better solution</textarea>
+<br>
+<button id="submit" type="button" onclick="submit_data()">Submit</button>
+</form>
+</div>
+
+</body>
+</html>
+  
